@@ -1,0 +1,17 @@
+image: circleci/openjdk:8-jdk-stretch
+
+cache:
+  paths:
+    - ./m2/repository/
+    - ./target/failsafe-reports/
+    - ./target/site/serenity/
+
+build:
+  stage: build
+  script:
+    - mvn dependency:go-offline
+
+test:
+  stage: test
+  script:
+    - mvn clean verify
