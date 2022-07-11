@@ -1,8 +1,17 @@
 # payconiq  Assignment
 
-In the assignment following points are covered
 
-**Automated the API endpoint /booking for below scenarios**
+## Technology Stack
+
+- Java
+- Serenity BDD
+- Cucumber(Junit Runner)
+- Maven
+- RestAssured
+
+##High level scenario's automated for http://restful-booker.herokuapp.com including
+##GET/POST/PUT/PATCH/DELETE methods for /booking endpoint
+
   Create a Booking and verify response code and response Body for all fields
   Create Multiple Bookings and verify GetAll api response code
   Verify existing booking gets deleted and not present in GET all response
@@ -15,15 +24,15 @@ In the assignment following points are covered
 
 ## Project Gitlab
 
-PROJECT_CHECKOUT_FOLDER - 
+PROJECT_CHECKOUT_FOLDER - https://github.com/priyaverma91/APIAutomation.git
 
-Move to the base of the  i.e, `${PROJECT_CHECKOUT_FOLDER}\ `
+Move to the base of the APIAutomation i.e, `${PROJECT_CHECKOUT_FOLDER}\APIAutomation `
 
-git clone 
-
-cd ${PROJECT_CHECKOUT_FOLDER}\
-
-git pull
+        git clone https://github.com/priyaverma91/APIAutomation.git
+        
+        cd ${PROJECT_CHECKOUT_FOLDER}\APIAutomation
+        
+        git pull
 
 ## Structure
 ```Gherkin
@@ -62,33 +71,6 @@ To run all tests in local and get Serenity test report
     - target/site/serenity -Serenity report path
 
     - target/site/serenity/index.html - index.html will be genareted with all test cases
-
-## Integrated with Gitlab CI
-
-To open Serenity Report in Gitlab CI job
-- Click browse on the job to access the Serenity report
-- Go to target/site/serenity/index.html
-
-
-**.gitlab-ci.yml**
-image: circleci/openjdk:8-jdk-stretch
-
-cache:
-paths:
-- ./m2/repository/
-- ./target/failsafe-reports/
-- ./target/site/serenity/
-
-build:
-stage: build
-script:
-- mvn dependency:go-offline
-
-test:
-stage: test
-script:
-- mvn clean verify
-
 
 
 
