@@ -71,6 +71,12 @@ To run all tests in local and get Serenity test report
     - target/site/serenity -Serenity report path
 
     - target/site/serenity/index.html - index.html will be genareted with all test cases
+    
+    Scereenshots for Serenity Report
+    
+ ![serenity1](https://user-images.githubusercontent.com/105927698/178214036-833e3ed5-1829-499c-b909-0ff9b7518b46.png)
+![serenity2](https://user-images.githubusercontent.com/105927698/178214141-fada1932-cc61-4460-9fa1-c62e8ffcf2a0.png)
+   
 
 
 
