@@ -8,7 +8,7 @@
 	<artifactId>rest-bdd-serenity</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>leaseplan</name>
+	<name>payconiq</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
