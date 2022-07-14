@@ -1,6 +1,3 @@
-/**
- * Copyright © 2019 by Hilti Corporation – all rights reserved
- */
 package utils;
 
 import org.apache.commons.lang3.StringUtils;
